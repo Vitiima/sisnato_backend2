@@ -9,7 +9,7 @@ import {
 } from '@nestjs/common';
 import { NowService } from './now.service';
 import { UpdateNowDto } from './dto/update-now.dto';
-import { AuthGuard } from 'src/auth/auth.guard';
+import { AuthGuard } from '../../auth/auth.guard';
 import {
   ApiBearerAuth,
   ApiOperation,

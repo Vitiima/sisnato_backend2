@@ -41,4 +41,8 @@ export class CreateFinanceiroDto {
   @ApiProperty({description:'Contrutoras da Financeira', example: [1, 2, 3], type: [Number]})
   @IsNotEmpty({message:'As Contrutoras é obrigatórias'})
   contrutoras: [number]
+
+  constructor(partial: Partial<CreateFinanceiroDto>) {
+    Object.assign(this, partial);    
+  }
 }

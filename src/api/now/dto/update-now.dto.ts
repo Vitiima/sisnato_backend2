@@ -7,4 +7,8 @@ export class UpdateNowDto {
   @IsBoolean({ message: 'alertanow deve ser true ou false' })
   @Type(() => Boolean)
   alertanow: boolean;
+
+  constructor(partial: Partial<UpdateNowDto>) {
+    Object.assign(this, partial);
+  }
 }

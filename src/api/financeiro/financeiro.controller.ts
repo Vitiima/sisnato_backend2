@@ -12,7 +12,7 @@ import {
 import { FinanceiroService } from './financeiro.service';
 import { CreateFinanceiroDto } from './dto/create-financeiro.dto';
 import { UpdateFinanceiroDto } from './dto/update-financeiro.dto';
-import { AuthGuard } from 'src/auth/auth.guard';
+import { AuthGuard } from '../../auth/auth.guard';
 import {
   ApiBearerAuth,
   ApiBody,

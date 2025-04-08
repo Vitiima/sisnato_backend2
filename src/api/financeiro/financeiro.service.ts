@@ -1,11 +1,11 @@
 import { HttpException, Injectable } from '@nestjs/common';
 import { CreateFinanceiroDto } from './dto/create-financeiro.dto';
 import { UpdateFinanceiroDto } from './dto/update-financeiro.dto';
-import { PrismaService } from 'src/prisma/prisma.service';
+import { PrismaService } from '../../prisma/prisma.service';
 import { ErrorFinanceiroEntity } from './entities/financeiro.error.entity';
 import { Financeiro } from './entities/financeiro.entity';
 import { plainToClass } from 'class-transformer';
-import { LogService } from 'src/log/log.service';
+import { LogService } from '../../log/log.service'; 
 
 @Injectable()
 export class FinanceiroService {

@@ -1,10 +1,10 @@
 import { HttpException, Injectable } from '@nestjs/common';
 import { UpdateNowDto } from './dto/update-now.dto';
-import { PrismaService } from 'src/prisma/prisma.service';
+import { PrismaService } from '../../prisma/prisma.service';
 import { ErrorChamadoEntity } from '../chamado/entities/chamado.error.entity';
 import { plainToClass } from 'class-transformer';
 import { Now } from './entities/now.entity';
-import { LogService } from 'src/log/log.service';
+import { LogService } from '../../log/log.service';
 
 @Injectable()
 export class NowService {
