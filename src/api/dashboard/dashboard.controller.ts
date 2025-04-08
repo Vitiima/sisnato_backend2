@@ -1,6 +1,6 @@
 import { Controller, Get, UseGuards } from '@nestjs/common';
 import { DashboardService } from './dashboard.service';
-import { AuthGuard } from 'src/auth/auth.guard';
+import { AuthGuard } from '../../auth/auth.guard';
 import { ApiBearerAuth, ApiOperation, ApiResponse } from '@nestjs/swagger';
 import { DashboardEmpreendimentoEntity } from './entities/dashboard.empreendimento.entity';
 import { DashboardConstrutorasEntity } from './entities/dashboard.construtoras.entity';

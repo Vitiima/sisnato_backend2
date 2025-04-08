@@ -139,7 +139,7 @@ export class SuporteService {
         };
         throw new HttpException(retorno, 404);
       }
-      const urls = Exist.urlveiw as any[];
+      const urls = Exist.urlview as any[];
       urls.map(async (url) => {
         await this.S3.deleteFile('suporte', url.url_view.split('/').pop());
       });
